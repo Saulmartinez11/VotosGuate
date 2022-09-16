@@ -1,0 +1,287 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c3765;
+    padding: 0 50px;
+    color: white;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-contenedor{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    background-color: rgb(249, 252, 255);
+}
+
+.info-mesas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+
+.info-mesas>h3,h4{
+    font-size: 20px;
+    padding: 5px;
+}
+.info-mesas>h3{
+    font-weight: 400;
+}
+
+.logo-tse{
+    max-width: 600px;
+}
+
+.menu a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+.menu button{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+#mesas{
+    border: none;
+}
+
+
+.mostrar-menu, 
+.esconder-menu{
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #7babfd;
+}
+
+#check{
+    display: none;
+}
+
+.grafica-pie{
+    border: 1px solid black;
+    margin: 10px;
+    width: 400px;
+    margin-left: 350px;
+}
+
+
+/* /BANNER/ */
+
+/* #banner{
+    padding: 0 50px;
+    background-image: url(https://res.cloudinary.com/cees/image/upload/c_fit,w_1600,q_auto/v1578969477/irigi88v3ab592bx49tp.jpg);
+    background-repeat: initial;
+    height: 45vh;
+    background-size: contain;
+    background-position: center;
+
+}
+
+#banner:before{
+    content: ' ';
+    background: rgba(77,77,92,0.6) ;
+    position: absolute;
+    height: 45vh;
+    width: 100%;
+    left: 0;
+} */
+
+.contenido-banner{
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: #1c3765;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-banner h3 span {
+    font-weight: 600;
+}
+
+.boton-empezar{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #1c3765;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+.boton-empezar:hover{
+    background: #1c3765;
+}   
+
+/* GRAFICAS */
+
+
+.header-consulta{
+    /* background-color: lightblue; */
+    border: 1px solid black;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header-consulta>h4{
+    padding: 0;
+}
+
+
+
+/* table{
+    max-width: 60%;
+} */
+
+
+/* footer */
+footer{
+    background-color: #1c3765;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* RESPONSIVE  (AQUI USAMOS LAS MEDIA QUERYS :o) */
+@media screen and (max-width: 768px){
+
+    .grafica-pie{
+        margin-left: 0px;
+        width: 350px;
+    }
+
+    .logo-tse{
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .page{
+        flex-direction: column;
+    }
+
+    .tabla-contenedor{
+        margin-left: 0%;
+    }
+
+    .info-mesas{
+        flex-direction: column;
+    }
+
+    /* /Header/ */
+
+    .menu button{
+        border: none;
+    }
+    /* .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s ease;
+    }
+    
+    .menu a{
+        display: block;
+        padding: 10px;
+    }
+    .menu button{
+        border: none;
+        color: black;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+
+    } */
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .page{
+        flex-direction: column;
+    }
+
+    .tabla-contenedor{
+        margin-left: 0%;
+    }
+
+    .info-mesas{
+        flex-direction: column;
+    }
+
+   
+   
+    .menu a{
+        display: block;
+       
+        padding: 10px;
+    }
+
+
+
+}
